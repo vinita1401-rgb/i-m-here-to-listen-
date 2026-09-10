@@ -1,1 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>I'm Here to Listen</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+<b>🫶 I'm Here to Listen</b>
+<nav>
+<a href="#about">About</a>
+<a href="#share">Share</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+<div>
+<p>You don't have to carry it alone.</p>
+
+<h1>
+Sometimes, all we need is someone who will
+<span>listen.</span>
+</h1>
+
+<p class="lead">
+Share what you're going through. No judgement, no pressure—just a caring person ready to hear you.
+</p>
+
+<a class="btn" href="#share">Share Your Problem</a>
+</div>
+
+<div class="card">
+💗
+<small>A place to be heard</small>
+</div>
+</section>
+
+<section id="about" class="features">
+
+<article>
+👂 <b>Just Listen</b>
+<p>Talk openly and be heard without judgement.</p>
+</article>
+
+<article>
+🔒 <b>Respect & Privacy</b>
+<p>Your conversation should be treated with care.</p>
+</article>
+
+<article>
+🌷 <b>Human Support</b>
+<p>A warm, compassionate listening experience.</p>
+</article>
+
+</section>
+
+<section id="share" class="box">
+
+<h2>Tell me what's on your mind</h2>
+
+<form onsubmit="event.preventDefault();document.querySelector('#msg').textContent='Thank you for sharing. We will connect with you shortly.'">
+
+<input placeholder="Your name (optional)">
+
+<input placeholder="WhatsApp / Email">
+
+<textarea required placeholder="Write your problem or what you're feeling..."></textarea>
+
+<button class="btn" type="submit">Send Message</button>
+
+</form>
+
+<p id="msg"></p>
+
+</section>
+
+<section id="booking" class="box pay">
+
+<h2>Private Listening Session</h2>
+
+<p>
+Book a paid listening session. Please share your details below.
+</p>
+
+<form onsubmit="event.preventDefault();document.querySelector('#booking-msg').textContent='Thank you! Your booking request has been received. We will contact you shortly.'">
+
+<input required placeholder="Your name">
+
+<input required placeholder="WhatsApp number">
+
+<select required>
+<option value="">Choose session duration</option>
+<option>30 minutes</option>
+<option>60 minutes</option>
+</select>
+
+<textarea placeholder="Anything you would like us to know?"></textarea>
+
+<button class="btn" type="submit">
+Request Booking
+</button>
+
+</form>
+
+<p id="booking-msg"></p>
+
+</section>
+
+<section id="contact" class="box contact">
+
+<h2>Need someone to listen?</h2>
+
+<p>Reach out and take the first small step.</p>
+
+<a class="btn" href="#booking">Book a Session</a>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 I'm Here to Listen · Supportive listening is not a substitute for emergency or professional mental-health care.
+</footer>
+
+</body>
+</html>
